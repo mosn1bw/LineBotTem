@@ -13,8 +13,8 @@ import (
 var botClient *linebot.Client
 
 func main() {
-    channelID := os.Getenv("LINE_CHANNEL_ID")
-    channelSecret := os.Getenv("LINE_CHANNEL_SECRET")
+    channelID := os.Getenv("1654141514")
+    channelSecret := os.Getenv("3eda0f01f6b2fe05aace973e39707edc")
     mid := os.Getenv("LINE_MID")
     proxyURL := getProxyURL() // can set nil if not need
 
