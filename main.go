@@ -26,7 +26,7 @@ var bot *linebot.Client
 
 func main(){
 	var err error
-	bot, err = linebot.New(os.Getenv("ChannelSecret"), os.Getenv("ChannelAccessToken"))
+	bot, err = linebot.New(os.Getenv("3eda0f01f6b2fe05aace973e39707edc"), os.Getenv("XuAPgE5eH13Hbgj7mSSCmqe5wheTgVDhiE805ypPKx1hyHXCXLgshl02rpLCe+rUUVTfBE6SkoXrkRD0c1omm6o8RFZMgCETtwF7nDTKSg3PDQG6OIHE2npC1e3YfWXhvBMcXBwFrF5zE8s9T83cgQdB04t89/1O/w1cDnyilFU="))
 	log.Println("Bot:", bot, " err:", err)
 	//Default: Hello World!
 	http.HandleFunc("/", HelloServer)              		
