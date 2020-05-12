@@ -1,5 +1,5 @@
 {
-  "name": "LineBotTemplate",
+  "name": "LineBotTem",
   "description": "Line Bot API template",
   "repository": "https://github.com/srsuper/LineBotTem",
   "keywords": ["Line", "go", "static"],
