@@ -106,7 +106,7 @@ func SendMsgHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	//Send Message to user
 	if val[0][1] == "SendMsg" {
-		bot, err := linebot.New(os.Getenv("ChannelSecret"), os.Getenv("ChannelAccessToken"))
+		bot, err := linebot.New(os.Getenv("3eda0f01f6b2fe05aace973e39707edc"), os.Getenv("XuAPgE5eH13Hbgj7mSSCmqe5wheTgVDhiE805ypPKx1hyHXCXLgshl02rpLCe+rUUVTfBE6SkoXrkRD0c1omm6o8RFZMgCETtwF7nDTKSg3PDQG6OIHE2npC1e3YfWXhvBMcXBwFrF5zE8s9T83cgQdB04t89/1O/w1cDnyilFU="))
 		if err != nil {
 		}
 		if _, err := bot.PushMessage(val[1][1], linebot.NewTextMessage(val[2][1])).Do(); err != nil {
@@ -116,7 +116,7 @@ func SendMsgHandler(w http.ResponseWriter, r *http.Request) {
 func InputMsgHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("method:", r.Method)
     if r.Method == "GET" {
-        t, _ := template.ParseFiles("InputLineMsg.gtpl")
+        t, _ := template.ParseFiles("InputLineMsg.html")
         t.Execute(w, nil)
 		//v := url.Values{}
     } else {
