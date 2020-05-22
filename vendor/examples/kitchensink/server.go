@@ -29,9 +29,9 @@ import (
 
 func main() {
 	app, err := NewKitchenSink(
-		os.Getenv("CHANNEL_SECRET"),
-		os.Getenv("CHANNEL_TOKEN"),
-		os.Getenv("APP_BASE_URL"),
+		os.Getenv("539edc4e8dad5331781be75742242d0e"),
+		os.Getenv("lzceiwKEwtcXKq+Nvje/0pIYjpMDgvIy86JXCyxKxRorrBp5tQtMtOBE3zMsfn7dS8Pb+mbn+PdC01dx5JperIBvSjl58oNCWWLVEgDjhIZLRAPy77dNRkwt4ux4zjZNGfzsu0Cq87JBR5nZlSqoZmbZkCQsS1A9FX3FSRp/ceE="),
+		os.Getenv("KitchenSink"),
 	)
 	if err != nil {
 		log.Fatal(err)
